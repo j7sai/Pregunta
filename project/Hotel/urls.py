@@ -20,5 +20,5 @@ import stack_overflow
 
 urlpatterns =[
     path('admin/', admin.site.urls),
-    path('stack_overflow/',stack_overflow.views.index),
+    path('stack_overflow/',include('stack_overflow.urls'),
 ]
